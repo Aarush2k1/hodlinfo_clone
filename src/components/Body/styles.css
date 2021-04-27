@@ -17,6 +17,28 @@
     }
 }
 
+.color-green {
+    color: #5dc7c2;
+}
+
+.avg-heading {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.avg-header-mainText {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.avg-header-subHeading {
+    font-weight: 400;
+    color: #0c0f48;
+    opacity: .45;
+    font-weight: 300;
+    font-size: 20px;
+}
+
 .avg-subText {
     font-weight: 400;
     color: #0c0f48;

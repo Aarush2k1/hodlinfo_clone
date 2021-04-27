@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 import { Button, Col, Container, Row, ToggleButton } from "react-bootstrap";
 import CircularStatic from "./CircularStatic";
 import bg from "../../images/3.png";
@@ -34,7 +35,7 @@ export default function Header() {
           </Col>
           <Col md={4}>
             <CircularStatic />
-            <Button className="ml-4 mb-4" variant="light">
+            <Button className="ml-4 mb-4 telegram-button">
               Connect Telegram
             </Button>
             <ToggleButton />

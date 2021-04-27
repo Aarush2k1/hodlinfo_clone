@@ -8,3 +8,24 @@
     font-size: 12px;
     font-weight: 400;
 }
+
+.bottomBox {
+    border: solid 1px #191d28;
+    background-color: #191d28;
+    position: fixed;
+    left: 0;
+    align-items: center;
+    width: 100vw;
+    height: 47px;
+    bottom: 0;
+    z-index: 8;
+    padding: 5px 0px;
+}
+
+.btn {
+    display: block;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}

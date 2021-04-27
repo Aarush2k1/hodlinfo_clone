@@ -2,25 +2,6 @@ import React from "react";
 import "./styles.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-var style = {
-  backgroundColor: "#F8F8F8",
-  borderTop: "1px solid #E7E7E7",
-  textAlign: "center",
-  padding: "20px",
-  position: "fixed",
-  left: "0",
-  bottom: "0",
-  height: "60px",
-  width: "100%",
-};
-
-var phantom = {
-  display: "block",
-  padding: "20px",
-  height: "60px",
-  width: "100%",
-};
-
 export default function Footer() {
   return (
     <>
@@ -42,8 +23,9 @@ export default function Footer() {
           </Col>
         </Row>
       </Container>
-      <div style={phantom} />
-      <div style={style}>Add to Home Screen</div>
+      <div className="bottomBox justify-content-center">
+        <div className="btn btn-outline-info">Add hodlinfo To Home Screen</div>
+      </div>
     </>
   );
 }

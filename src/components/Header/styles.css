@@ -5,3 +5,13 @@
     font-size: 18px;
     color: gray;
 }
+
+.telegram-button {
+    background-color: #5dc7c2;
+}
+
+btn-primary {
+    color: #fff;
+    background-color: #5dc7c2;
+    border-color: #007bff;
+}
