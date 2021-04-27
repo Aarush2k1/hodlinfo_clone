@@ -4,14 +4,31 @@
     opacity: 0.8;
     font-size: 18px;
     color: gray;
+    align-items: center;
 }
 
 .telegram-button {
-    background-color: #5dc7c2;
+    margin: 10px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    background-color: #3dc6c1;
+    color: #fff !important;
 }
 
-btn-primary {
-    color: #fff;
-    background-color: #5dc7c2;
-    border-color: #007bff;
+.telegram-logo {
+    height: 15px;
+    margin-right: 10px;
+}
+
+.d-inline-box {
+    align-items: center;
+    display: inline-block !important;
+}
+
+.slider {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

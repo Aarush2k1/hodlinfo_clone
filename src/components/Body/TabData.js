@@ -1,40 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableCell from "@material-ui/core/TableCell";
-import TableBody from "@material-ui/core/TableBody";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
 
 function createData(id, sno, platform, ltp, bsp, difference, savings) {
   return { id, sno, platform, ltp, bsp, difference, savings };
 }
-const useStyles = makeStyles({
-  head: {
-    fontFamily: "Oswald",
-    fontSize: "16px",
-    opacity: 0.45,
-    letterSpacing: "1px",
-    margin: "0 0 -5px",
-  },
-  body: {
-    fontSize: 14,
-    padding: 20,
-    fontWeight: 500,
-    lineHeight: 1.2,
-    borderTop: "1px solid #dee2e6",
-  },
-  color: {
-    color: "#5dc7c2",
-  },
-  h4: {
-    display: "block",
-    marginBlockStart: "1.33em",
-    marginBlockEnd: "1.33em",
-    marginInlineStart: "0px",
-    marginInlineEnd: "0px",
-  },
-});
 const rows = [
   createData(
     0,
@@ -93,35 +61,34 @@ const rows = [
 ];
 
 export default function TabData() {
-  const classess = useStyles();
-
   return (
-    <>
-      <Table responsive="sm" size="small" m={1} p={1}>
-        <TableHead>
-          <TableRow className={classess.head}>
-            <TableCell>#</TableCell>
-            <TableCell>Platform</TableCell>
-            <TableCell>Last Traded Price</TableCell>
-            <TableCell>Buy/Sell Price</TableCell>
-            <TableCell>Difference</TableCell>
-            <TableCell>Savings</TableCell>
-          </TableRow>
-        </TableHead>
+    <div
+      className="table table-borderless table-responsive"
+      style={{ margin: "0px auto" }}
+    >
+      <thead className="head">
+        <tr>
+          <th>#</th>
+          <th>Platform</th>
+          <th>Last Traded Price</th>
+          <th>Buy/Sell Price</th>
+          <th>Difference</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
 
-        <TableBody className={classess.body}>
-          {rows.map((row) => (
-            <TableRow styles={{ padding: "10px" }} m={2} key={row.id}>
-              <TableCell>{row.sno}</TableCell>
-              <TableCell>{row.platform}</TableCell>
-              <TableCell>{row.ltp}</TableCell>
-              <TableCell>{row.bsp}</TableCell>
-              <TableCell className={classess.color}>{row.difference}</TableCell>
-              <TableCell className={classess.color}>{row.savings}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </>
+      <tbody className="body">
+        {rows.map((row) => (
+          <tr styles={{ padding: "10px" }} m={2} key={row.id}>
+            <td>{row.sno}</td>
+            <td>{row.platform}</td>
+            <td>{row.ltp}</td>
+            <td>{row.bsp}</td>
+            <td className="rows">{row.difference}</td>
+            <td className="rows">{row.savings}</td>
+          </tr>
+        ))}
+      </tbody>
+    </div>
   );
 }
