@@ -1,0 +1,10 @@
+.footer {
+    color: #888686;
+}
+
+.footer-text {
+    white-space: nowrap;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: 400;
+}

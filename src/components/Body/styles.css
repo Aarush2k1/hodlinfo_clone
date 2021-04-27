@@ -1,0 +1,27 @@
+.justify-content-around {
+    justify-content: space-around !important;
+}
+
+.d-flex {
+    display: flex !important;
+    font-family: Oswald, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .average-subText {
+        font-weight: 400;
+        color: #0c0f48;
+        opacity: .45;
+        font-weight: 300;
+        font-size: 8px;
+    }
+}
+
+.avg-subText {
+    font-weight: 400;
+    color: #0c0f48;
+    opacity: .45;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .75px;
+}
