@@ -28,8 +28,11 @@ const useStyles = makeStyles({
     color: "#5dc7c2",
     // color: #da5757;
   },
-  h4: {
-    display: "block",
+  h4: {},
+  cell: {
+    margin: "15px",
+    backgroundColor: "#f8f9fa",
+    display: "inline-block",
     marginBlockStart: "1.33em",
     marginBlockEnd: "1.33em",
     marginInlineStart: "0px",

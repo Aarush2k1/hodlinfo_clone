@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <div style={{ padding: "20px 30px 0px" }}>
-      <Container className="align-items-center justify-content-sm-center">
+      <Container className="head align-items-center justify-content-sm-center">
         <Row className="form-row mr-auto">
           <Col md={4} className="mw-1">
             <img
@@ -18,7 +18,7 @@ export default function Header() {
               alt="headimg"
               style={{ width: "70%", marginLeft: 0 }}
             />
-            <p className="head">Powered By Finstreet</p>
+            <p className="">Powered By Finstreet</p>
           </Col>
           <Col lg={4} md={2} sm={12} w={100} className="flexbox">
             <Select className="m-1 d-inline-box">

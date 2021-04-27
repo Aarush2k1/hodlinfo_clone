@@ -15,6 +15,9 @@ export default function Footer() {
           <Col className="footer-text">Support</Col>
         </Row>
       </div>
+      <div class="d-flex justify-content-center bottomBox ">
+        <div class="btn btn-outline-info">Add hodlinfo To Home Screen</div>
+      </div>
     </>
   );
 }
